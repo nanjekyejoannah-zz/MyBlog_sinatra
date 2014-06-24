@@ -1,0 +1,30 @@
+<style type="text/css">
+.content{
+	background-color: white;
+	margin-top: -14px;
+	padding-bottom: 45px;
+}
+p{
+	margin-left: 20px;
+}
+span{
+	margin-left: 20px;
+}
+.Welcome{
+	padding-top: -13px;
+}
+
+</style>
+<div class = "content">
+
+
+<div class = "Welcome"><p><i>Welcome to my blog!</i></p></div>
+<% @posts.each do |post| %>
+  <p><a href="/posts/<%= post.id %>"><%= post.title %></a></p></li>
+  <span><%= post.body %></span>
+  <p><a href="/">comments</a> <a href="">Add comment</a></p>
+<% end %>
+
+
+ 
+</div>

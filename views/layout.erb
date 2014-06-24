@@ -1,0 +1,226 @@
+<!-- language redirection -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title><%= @title %></title>
+<meta name="generator" content="WordPress 3.9" /> <!-- leave this for stats -->
+ <meta content='r' name='keywords'/>
+<meta name="verify-v1" content="HJ1dq2v1pVtUC12cAggXn9Drd/kHexRQdCPS5c2XHL0=" />
+
+<link rel="stylesheet" href="http://jamescrisp.org/wordpress/wp-content/themes/freshy/style.css" type="text/css" media="screen" title="Freshy"/>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+
+
+
+
+<style type="text/css">
+
+.contactform {
+  overflow: hidden;
+}
+
+.contactleft {
+  width: 15%; 
+  text-align: left;
+  clear: both;
+  float: left;
+  display: inline;
+  padding-left: 0px;
+  margin: 5px 0;
+    font-weight: bold;
+}
+
+.contactright {
+  width: 70%;
+  text-align: left;
+  float: right;
+  display: inline;
+  padding: 4px;
+  margin: 5px 0;
+  margin-right: 10px;
+}
+
+.contacterror {
+  border: 2px solid #ff0000;
+}
+
+.contactleft label {
+  padding: 0px;
+  margin: 0px;
+}
+
+</style>
+
+
+
+
+
+
+  <style type="text/css">
+  .menu li a {
+    background-image:url("http://jamescrisp.org/wordpress/wp-content/themes/freshy/images/menu/menu_triple.gif");
+  }
+  .menu li a.first_menu {
+    background-image:url("http://jamescrisp.org/wordpress/wp-content/themes/freshy/images/menu/menu_start_triple.gif");
+  }
+  .menu li a.last_menu {
+    background-image:url("http://jamescrisp.org/wordpress/wp-content/themes/freshy/images/menu/menu_end_triple.gif");
+  }
+  .menu li.current_page_item a {
+    color:#000000 !important;
+  }
+  
+  .description {
+    color:#ADCF20;
+  }
+  #content .commentlist dd.author_comment {
+    background-color:#a3cb00 !important;
+  }
+  html > body #content .commentlist dd.author_comment {
+    background-color:#a3cb00 !important;
+  }
+  #content .commentlist dt.author_comment .date {
+    color:#a3cb00 !important;
+    border-color:#a3cb00 !important;
+  }
+  #content .commentlist .author_comment .author,
+  #content .commentlist .author_comment .author a {
+    color:#a3cb00 !important;
+    border-color:#a3cb00 !important;
+  }
+  #sidebar h2 {
+    color:#f78b0c;
+    background-color:#FFFFFF;
+    border-bottom-color:#f78b0c;
+  }
+  #sidebar {
+    background-color:#FFFFFF;
+  }
+  *::-moz-selection {
+    background-color:#FF3C00;
+  }
+
+  #content a:hover {
+    border-bottom:1px dotted #FF3C00;
+  }
+
+  #sidebar a:hover,
+  #sidebar .current_page_item li a:hover,
+  #sidebar .current-cat li a:hover,
+  #sidebar .current_page_item a,
+  #sidebar .current-cat a ,
+  .readmore,
+  #content .postmetadata a
+  {
+    color : #FF3C00;
+  }
+  
+  #title_image {
+    margin-left: 60px;
+    margin-right: 60px;
+    text-align:left;
+    display:block;
+    height:334px; /* 95 */
+        background-image:url("images/photo.jpg");
+      }
+
+  #paggy {
+    width: 900px;
+    margin: 0px auto;
+    padding: 0px 0px 0px;
+}
+
+#footer .footer_content {
+    width: 760px !important;
+    display: block;
+    margin-right: auto;
+    margin-left: auto !important;
+    margin-top: -18px;
+    padding: 10px;
+    border-top: 1px dotted #C0C0C0;
+    text-align: center;
+}
+  
+  </style>
+
+  </head>
+<body>
+
+<div id="paggy">
+  
+  <!-- header -->
+  <div id="header">
+    <div id="title">
+      <h1>
+        <a href="">
+          <span>Joannah Nanjekye</span>
+        </a>
+      </h1>
+      <div class="description">
+        <small>Ruby, sinatra, python,Django,C#, .NET,Arduino programming.</small>
+      </div>
+    </div>
+    
+  </div>
+
+  <div id="title_image"></div> 
+  
+  <!-- main div -->
+  <div id="frame">
+
+  <!-- main menu -->
+      <ul class="menu">
+      
+      <li class="page_item"><a class="first_menu" href="/">Blog </a></li>  
+      <li class="page_item"><a href="about" title="About">About</a></li>
+      <li class="page_item"><a href="contact" title="Contact">Contact</a></li>
+        
+      <li class="last_menu">
+        
+        <!-- if an email is set in the options -->
+                <!-- put an empty link to have the end of the menu anyway -->
+          
+        <a class="last_menu_off">
+        </a>
+          
+                  
+      </li>
+
+    </ul>
+    
+  <hr style="display:none"/>
+
+  <%= yield %>
+
+<hr style="display:none"/>
+
+<div id="footer">
+  <small class="footer_content footy" >
+  Copyright &copy; 2014 Joannah Nanjekye. Theme thanks to <a href="http://jamescrisp.org/">James Crisp</a> and <a href="http://www.jide.fr">jide</a>.
+      </small>
+  
+</div>
+
+</div> <!--- end of the <div id="page"> (from header.php) -->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4071765-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+</body>
+</html>

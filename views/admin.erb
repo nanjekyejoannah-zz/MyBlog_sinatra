@@ -1,0 +1,37 @@
+<style type="text/css">
+.content {
+    background-color: #FFF;
+    margin-top: 1px;
+    padding-bottom: 45px;
+    margin-left: 1px;
+}
+
+textarea {
+    overflow: auto;
+    display: block;
+    width: 768px;
+}
+
+p,h3,b,ul{
+  margin-left: 20px;
+}
+</style>
+<div class = "content">
+
+   
+ <form action="/admin" method="post">
+  <label for="post_title">Title:</label><br />
+  <input id="post_title" name="post[title]" type="text" value="<%= @post.title %>" />
+  <br />
+ 
+  <label for="post_body">Body:</label><br />
+  <textarea id="post_body" name="post[body]" rows="4"><%= @post.body %></textarea>
+  <br />
+  <input type="submit" value="Create Post" />
+</form> 
+
+
+
+
+
+</div>
