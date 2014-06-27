@@ -32,6 +32,11 @@ get '/contact' do
 	erb :contact
   
 end
+get '/app' do
+
+  erb :app
+  
+end
 
 get '/admin' do
    @post = Post.new
@@ -46,3 +51,7 @@ post '/admin' do
      "There was a problem saving that..."
    end
  end
+
+ 
+
+ 
