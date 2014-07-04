@@ -3,10 +3,28 @@ require 'rubygems'
 require 'sinatra'
 require 'active_record'
 
+configure :production do
+
+db = URI.parse('postgres://user:pass@localhost/dbname')
+
 ActiveRecord::Base.establish_connection(
-  :adapter => 'sqlite3',
-  :database =>  'MySite.sqlite3.db'
+  :adapter  => db.scheme == 'postgres' ? 'postgresql' : db.scheme,
+  :host     => db.host,
+  :username => db.user,
+  :password => db.password,
+  :database => db.path[1..-1],
+  :encoding => 'utf8'
 )
+
+end
+
+configure :development do
+  ActiveRecord::Base.establish_connection(
+    :adapter => 'sqlite3',
+    :database =>  'MySite.sqlite3.db'
+  )
+end
+
 
 class Post < ActiveRecord::Base
 	has_many :comments
